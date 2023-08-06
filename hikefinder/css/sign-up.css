@@ -1,0 +1,47 @@
+.sign-up-form {
+  background-color: gray;
+  opacity: 0.9;
+  display: block;
+  margin: 1em auto;
+  padding: 3em 3em;
+  border: 5px solid green;
+  border-radius: 20px;
+}
+.form-title,
+.form-subtitle {
+  text-align: center;
+  color: white;
+}
+.form-title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.form-subtitle {
+  font-size: 1.6rem;
+}
+.form-subtitle a {
+  color: #ff8c00;
+}
+.username,
+.password {
+  padding: 1em 0;
+}
+input {
+  width: 100%;
+  margin-bottom: 2em;
+  border: none;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-title {
+    margin-top: 3em;
+  }
+  .sign-up-form {
+    margin-bottom: 6em;
+  }
+}

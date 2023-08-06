@@ -1,0 +1,641 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+main {
+  margin: 0 1.5em;
+}
+/* ----------------Header ------------------- */
+header {
+  margin: 2.3em 2em 1.9em 2em;
+}
+.right-logo {
+  margin-left: -1.5em;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-size: 1.5rem;
+  color: #262626;
+  margin-left: 0.3em;
+}
+.fa-bars {
+  font-size: 1.25rem;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ----------------Mobile Nav - Hamburger ------------------- */
+.mobile-nav {
+  background-color: white;
+  position: absolute;
+  top: 97px;
+  right: 0;
+  width: 40%;
+  margin-left: auto;
+  border: 5px solid green;
+  z-index: 1;
+}
+.nav-item {
+  list-style: none;
+  margin: 0 auto 1em auto;
+  padding: 1em 2em;
+  background-color: green;
+  width: 80%;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  display: block;
+}
+.close-btn {
+  color: black;
+  background-color: white;
+  padding: 0.5em;
+  font-size: 1rem;
+}
+.close-btn-wrapper {
+  color: white;
+  margin: 0.5em;
+}
+/* ----------------Hero ------------------- */
+.hero-container {
+  background-image: url("../images/hero-image.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 4.5em 2em 4.1em 2em;
+}
+.hero-heading {
+  font-size: 2.25rem;
+  line-height: 116.5%;
+}
+.white-heading {
+  color: #fff;
+  font-weight: 400;
+}
+.yellow-heading {
+  color: #ece480;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.hero-text {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.26px;
+}
+.search-container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 2.5em;
+  border-radius: 6px;
+  background: #fff;
+}
+.fa-magnifying-glass {
+  font-size: 1.5rem;
+  margin-left: 0.5em;
+}
+.search-btn {
+  background-color: #638a5c;
+  border-radius: 0px 4px 4px 0px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  padding: 1em;
+  margin: 0.2em 0.1em 0.2em auto;
+}
+.search-input {
+  border: none;
+  font-size: 1rem;
+  color: #c3c3c3;
+  font-weight: 600;
+  margin-left: 0.5em;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  padding: 1em 0;
+  outline: none;
+  color: black;
+}
+.heading {
+  color: #565656;
+  font-size: 1.5rem;
+  margin: 1.25em 0 0.92em 0;
+}
+.attraction-image {
+  width: 100%;
+  display: block;
+}
+.item-heading {
+  font-weight: 600;
+  margin: 1.15em 0 0.3em 0;
+  font-size: 1.5rem;
+}
+.attraction-length,
+.trail-rating-wrapper {
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+}
+.item-text {
+  color: #6f6f6f;
+  color: #6f6f6f;
+  line-height: 150%;
+  margin: 1.3em 0 2em 0;
+  font-size: 1rem;
+}
+.learn-more {
+  color: #fff;
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 150%;
+  border-radius: 4px;
+  border: 2px solid #638a5c;
+  background: #638a5c;
+  display: inline-block;
+  margin-bottom: 4.2em;
+  padding: 0.93em 1.25em;
+  text-decoration: none;
+}
+/* ----------------Notification Section ------------------- */
+.notifications-container {
+  text-align: center;
+  background: #fafafa;
+  padding: 0.6em 4em 3.1em 4em;
+  min-width: 300px;
+}
+.notification-image {
+  width: 35px;
+  margin-top: 2em;
+}
+.notification-heading {
+  padding-top: 1.25em;
+  font-size: 1rem;
+}
+.notification-text {
+  font-size: 0.8rem;
+  margin: 1.25em 2.3em 0;
+  padding-top: 1em;
+}
+.green {
+  color: #62895b;
+  font-weight: 600;
+  line-height: 150%;
+}
+/* ----------------Footer ------------------- */
+footer {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 3.4em 0;
+  min-width: 300px;
+  margin: 0;
+}
+.footer-links {
+  order: -1;
+}
+.logo-images {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8em;
+}
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+  margin: 1em 1.5em 1em 1.5em;
+}
+footer li {
+  color: white;
+  list-style: none;
+  padding-left: 1em;
+}
+.footer-nav-list a {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: white;
+  text-decoration: none;
+  padding-right: 1em;
+  margin-bottom: 1em;
+}
+.footer-subtitle {
+  font-size: 0.8rem;
+  color: #a5a5a5;
+  font-weight: 500;
+  margin: 1em 0 0 -4.5em;
+}
+.polygon-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.8em;
+}
+.polygon {
+  width: 34px;
+  height: 27px;
+}
+.right-footer-logo {
+  margin-left: -1.2em;
+}
+.logo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+}
+.logo-information {
+  display: flex;
+}
+/* ----------------Hover States and Utility Classes ------------------- */
+.hidden {
+  display: none;
+}
+.active {
+  font-style: italic;
+  color: white;
+}
+a,
+button {
+  cursor: pointer;
+}
+.nav-desktop-link:visited, .nav-desktop-link:link {
+  color: black;
+}
+.nav-green-link:visited, .nav-green-link:link {
+  color: white;
+}
+.learn-more:visited {
+  background-color: #62895b;
+  color: white;
+}
+.notification-text a:visited, .notification-text a:link {
+  color: #62895b;
+}
+.notification-text a:hover,
+.notification-text a:focus {
+  color: #ff8c00;
+  font-weight: bold;
+}
+button:hover,
+button:focus,
+.learn-more:hover,
+.learn-more:focus {
+  background-color: #ff8c00;
+  color: green;
+  opacity: 0.9;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  text-decoration: none;
+}
+.nav-item:hover,
+.nav-item:focus {
+  cursor: pointer;
+  background-color: #ff8c00;
+}
+.mobile-menu a:hover,
+.mobile-menu a:focus,
+.nav-item:hover,
+.nav-item:focus {
+  color: black;
+  font-weight: bold;
+  background-color: #ff8c00;
+}
+.nav-desktop-link:hover,
+.nav-desktop-link:focus,
+.footer-nav-list a:focus,
+.footer-nav-list a:hover {
+  opacity: 0.9;
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .hero-container {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-heading {
+    font-size: 3rem;
+    margin: 0 0.6em;
+  }
+  .hero-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 1em;
+  }
+  .left {
+    opacity: 0.8;
+    background: #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .search-container {
+    border-radius: 6px;
+    width: 90%;
+    margin: auto auto 4.6em auto;
+  }
+  .search-btn {
+    font-size: 1rem;
+    margin: 0.1em 0.1em 0.1em auto;
+  }
+  .search-input {
+    font-size: 1.3rem;
+    margin-left: 0.3em;
+  }
+  .mobile-nav {
+    top: 114px;
+  }
+  /* ----------------Hikes Section ------------------- */
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+  }
+  .heading {
+    font-size: 1.8rem;
+  }
+  .item-heading {
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
+  .item-text {
+    margin-bottom: 1em;
+  }
+  .attraction-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .learn-more {
+    font-size: 1rem;
+    padding: 9px 12px;
+    width: 42%;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  /* ----------------Notifications ------------------- */
+  .notifications-container {
+    display: flex;
+    margin-top: 3em;
+  }
+  .notification-image {
+    height: 40px;
+  }
+  /* ----------------Footer ------------------- */
+  .footer-nav-list a {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    margin: 0 3em;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.8em 1.9em 1.6em 1.8em;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-left: 0.3em;
+  }
+  .right-logo,
+  .left-logo {
+    height: 40.2px;
+  }
+  .right-logo {
+    margin-left: -2.2em;
+  }
+  .nav-desktop {
+    display: block;
+  }
+  .hamburger-icon-container {
+    display: none;
+  }
+  .nav-desktop-menu {
+    display: flex;
+  }
+  .nav-desktop-item {
+    list-style: none;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    align-self: center;
+    padding-right: 2em;
+    text-transform: uppercase;
+  }
+  .nav-desktop-link {
+    display: flex;
+    text-decoration: none;
+  }
+  .nav-link-button {
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 0.8em 0.9em;
+    margin-left: 0.75em;
+  }
+  .nav-green {
+    background: #638a5c;
+    color: #fff;
+    border: 2px solid transparent;
+  }
+  .nav-white {
+    border: 2px solid #000;
+  }
+  /* ----------------Hero------------------- */
+  .hero-container {
+    height: 600px;
+  }
+  .hero-heading {
+    font-size: 4.25rem;
+    margin-left: 0.7em;
+  }
+  .hero-text {
+    font-size: 1.6rem;
+    margin-left: 1.9em;
+  }
+  .search-container {
+    border-radius: 6px;
+    width: 90%;
+    margin: auto auto 4.6em auto;
+  }
+  .search-btn {
+    font-size: 2rem;
+    padding: 0.1em 0.4em 0.1em 0.6em;
+  }
+  .search-input {
+    font-size: 1.3rem;
+  }
+  /* ----------------Hikes Section ------------------- */
+  .hike-container {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    grid-template-areas: "title title title" "img-1 img-1 info-1" "info-2 img-2 img-2" "img-3 img-3 info-3";
+    grid-row-gap: 3em;
+  }
+  .hikes-heading {
+    grid-area: title;
+    font-size: 2.75rem;
+    margin-bottom: 0;
+  }
+  .floyen-img {
+    grid-area: img-1;
+  }
+  .ulriken-img {
+    grid-area: img-2;
+  }
+  .landasfjellet-img {
+    grid-area: img-3;
+  }
+  .floyen-wrapper {
+    grid-area: info-1;
+  }
+  .ulriken-wrapper {
+    grid-area: info-2;
+  }
+  .landasfjellet-wrapper {
+    grid-area: info-3;
+  }
+  .item-heading,
+  .trail-item {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .attraction-info {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .learn-more-btn {
+    font-size: 1.1rem;
+  }
+  .attraction-length .trail-rating-wrapper {
+    color: #000;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  .item-text {
+    font-size: 1.4rem;
+  }
+  /* ----------------Notifications ------------------- */
+  .notifications-container {
+    margin-top: 3.1em;
+    padding: 5.1em 0;
+  }
+  .notification-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .notification-image {
+    width: 52px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 1.6em;
+  }
+  .notification-heading {
+    padding-top: 0;
+    color: #4e4e4e;
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+  .notification-text {
+    color: #1f1f1f;
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+  /* ----------------Footer ------------------- */
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.1em 0.5em 4.1em 1.9em;
+  }
+  .logo-information {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2em;
+  }
+  .logo-images {
+    display: flex;
+    align-items: center;
+  }
+  .logo-content {
+    margin-left: 1em;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+    order: 1;
+  }
+  .footer-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-nav-list li {
+    margin-right: 1.5em;
+  }
+  .footer-nav-list a {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .right-footer-logo {
+    margin-left: -1.3em;
+  }
+  .polygon-logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo-images {
+    margin-top: 1em;
+  }
+  .footer-subtitle {
+    margin-top: 0.5em;
+    font-size: 1rem;
+    color: #ccc;
+    margin-left: -4em;
+  }
+}
+

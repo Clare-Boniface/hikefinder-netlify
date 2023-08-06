@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hikefinder</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="navbar">
+                    <div class="logo-container">
+                        <img src="./images/Polygon1.svg" class="left-logo" alt="triangle logo" />
+                        <img src="./images/Polygon2.svg" class="right-logo" alt="triangle logo" />
+                        <h1>HikeFinder</h1>
+                    </div>
+                    <div class="hamburger-icon-container">
+                        <i class="fa-solid fa-bars" id="mobile-hamburger-icon"></i>
+                    </div>
+                </div>
+                <nav class="mobile-nav hidden" id="mobile-nav">
+                    <div class="close-btn-wrapper">
+                        <i class="fa-solid fa-x close-btn" id="close-btn"></i>
+                    </div>
+                    <ul class="mobile-menu">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./explore.html" class="nav-link">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./signup.html" class="nav-link">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./login.html" class="nav-link">Log In</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-desktop hidden">
+                    <ul class="nav-desktop-menu">
+                        <li class="nav-desktop-item active">
+                            <a href="#" class="nav-desktop-link">Home</a>
+                        </li>
+                        <li class="nav-desktop-item">
+                            <a href="./explore.html" class="nav-desktop-link">Explore</a>
+                        </li>
+                        <li class="nav-desktop-item nav-link-button nav-green">
+                            <a href="./signup.html" class="nav-desktop-link nav-green-link">Sign Up</a>
+                        </li>
+                        <li class="nav-desktop-item nav-link-button nav-white">
+                            <a href="./login.html" class="nav-desktop-link nav-white-link">Log In</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="hero-container">
+                <div class="left">
+                    <h2 class="hero-heading white-heading">Find Your Next</h2>
+                    <h2 class="hero-heading yellow-heading">Adventure</h2>
+                    <h3 class="hero-text">
+                        Your next hiking adventure awaits. Get on the trail with detailed maps and updates shared by hikers like you.
+                    </h3>
+                </div>
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search by city" class="search-input" />
+                    <button class="search-btn">SEARCH</button>
+                </div>
+            </section>
+            <main>
+                <h2 class="heading hikes-heading">Hikes Near Bergen</h2>
+                <section class="hike-container main-container">
+                    <img src="../images/floyen.jpg" class="attraction-image floyen-img" alt="lakes and trees in Norway" />
+                    <div class="attraction-info floyen-wrapper">
+                        <h3 class="item-heading">Fløyen</h3>
+                        <p class="attraction-length">Length: 10.2km - Est. 5h</p>
+                        <p class="item-text">
+                            Fløibanen is one of Norway's most visited attractions. At the top of Fløyen you will find a large and varied hiking area, spectacular views of the city.
+                        </p>
+                        <a href="https://www.floyen.no/en/" target="_blank" class="learn-more">LEARN MORE</a>
+                    </div>
+                    <img src="../images/ulriken.png" class="attraction-image ulriken-img" alt="overlooking a city by the sea" />
+                    <div class="attraction-info ulriken-wrapper">
+                        <h3 class="item-heading ulriken-heading">Ulriken</h3>
+                        <p class="attraction-length">Length: 3.5 km - Est. 2 h 30 m</p>
+                        <p class="item-text">
+                            Ulriken is the highest of the Seven Mountains that surround the city of Bergen, Norway. It has a height of 643 meters (2,110 ft) above sea level.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Ulriken" target="_blank" class="learn-more">LEARN MORE</a>
+                    </div>
+                    <img src="../images/landasfjellet.png" class="attraction-image landasfjellet-img" alt="a hill top of craggy rocks and mountains" />
+                    <div class="attraction-info landasfjellet-wrapper">
+                        <h3 class="item-heading">Landåsfjellet</h3>
+                        <p class="attraction-length">Length: 3.5 km - Est. 2 h 30 m</p>
+                        <p class="item-text">
+                            Landåsfjellet is a lower plateau south of Ulriken/Haugavarden which offers numerous trails, and is almost a separate hiking region by its own.
+                        </p>
+                        <a href="https://no.wikipedia.org/wiki/Land%C3%A5sfjellet" target="_blank" class="learn-more">LEARN MORE</a>
+                    </div>
+                </section>
+            </main>
+            <section class="notifications-container">
+                <div class="notification-wrapper">
+                    <img src="../images/bell-solid1.svg" class="notification-image" alt="a bell icon" />
+                    <h2 class="notification-heading">Sign up for Notifications</h2>
+                    <p class="notification-text">
+                        <span class="green"><a href="./signup.html" target="_blank">Sign up </a></span>to get conditions alerts, information on pop-up events and interesting stories.
+                    </p>
+                </div>
+                <div class="notification-wrapper">
+                    <img src="../images/location-dot-solid2.svg" class="notification-image" alt="a pinpointer location icon" />
+                    <h2 class="notification-heading">Get the HikeFinder App</h2>
+                    <p class="notification-text">
+                        <span class="green"><a href="https://play.google.com/store" target="_blank">Download the app</a></span>
+                        to get the most out of every minute outdoors with offline maps and more!
+                    </p>
+                </div>
+                <div class="notification-wrapper">
+                    <img src="../images/share-solid1.svg" class="notification-image" alt="arrow icon" />
+                    <h2 class="notification-heading">Share Trails</h2>
+                    <p class="notification-text">
+                        <span class="green"><a href="https://twitter.com/home" target="_blank">Share your hiking adventures </a></span>with the community and keep a record of your travels.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="logo-information">
+                <div class="logo-images">
+                    <img src="../images/Polygon1-footer.svg" class="polygon left-footer-logo" alt="triangle-icon" />
+                    <img src="../images/Polygon2-footer.png" class="polygon right-footer-logo" alt="triangle-icon" />
+                </div>
+                <div class="logo-content">
+                    <div class="logo-heading">
+                        <h2 class="footer-heading">HikeFinder</h2>
+                    </div>
+                    <p class="footer-subtitle">Copyright 2023 Hikefinder</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <ul class="footer-nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./explore.html">Explore</a></li>
+                    <li><a href="./login.html">Log In</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
+
